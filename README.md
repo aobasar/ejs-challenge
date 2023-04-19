@@ -1,3 +1,1 @@
 # ejs-challenge
-
-test
