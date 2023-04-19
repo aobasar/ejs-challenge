@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<!--
+<% console.log(posts) %>
+
+<% for (var i=0; i<posts.length; i++) { %>
+<div class="post">
+  <h1>
+    <% console.log(posts[i].title) %>
+  </h1>
+  <p>
+    <% console.log(posts[i].content) %>
+  </p>
+
+</div>
+
+<% } %>
+ -->
+
+<% posts.forEach( function (post) { %>
+  <!-- <% console.log(post.title) %> -->
+  <h1><%= post.title %></h1>
+  <p><%=  post.content.substring(0, 140) + "..."; %>
+    <a href="/posts/<%= _.kebabCase(post.title) %>">read more</a>
+  </p>
+<% }) %>
+
+
+
+
+<%- include('partials/footer') %>
