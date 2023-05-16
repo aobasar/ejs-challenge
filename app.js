@@ -14,7 +14,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 let posts = []
 
 const app = express()
-const port = process.env.PORT || 3002
+const port = process.env.PORT || 3004
 
 app.set('view engine', 'ejs')
 
